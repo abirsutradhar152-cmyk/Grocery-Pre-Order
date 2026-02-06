@@ -1,0 +1,64 @@
+/* App-specific custom styles */
+
+/* Smooth card animation */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Primary button style (used with Tailwind if needed) */
+.btn-primary {
+  background-color: #22c55e; /* green-500 */
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-primary:hover {
+  background-color: #16a34a; /* green-600 */
+  transform: scale(1.03);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Empty state text */
+.empty-text {
+  color: #6b7280; /* gray-500 */
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* Order list styling */
+.order-list li {
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+/* Footer style */
+.app-footer {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .section-title {
+    text-align: center;
+  }
+}
+

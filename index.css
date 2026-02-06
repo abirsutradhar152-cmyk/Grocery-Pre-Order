@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f3f4f6; /* light gray */
+  color: #1f2937; /* gray-800 */
+  line-height: 1.5;
+}
+
+/* Smooth fonts */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+/* Input focus style */
+input:focus {
+  outline: none;
+}
+
+/* Scrollbar styling (optional, looks modern) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981; /* green-500 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669; /* green-600 */
+}
